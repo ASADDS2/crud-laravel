@@ -11,7 +11,7 @@ class ProductController extends Controller
     public function index()
     {
         // Enviamos todos los productos a la vista
-        return Inertia::render('Products/Index', [
+        return Inertia::render('products/products', [
             'products' => Product::latest()->get()
         ]);
     }
