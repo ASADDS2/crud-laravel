@@ -1,5 +1,5 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import { Head } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
 
 export default function Dashboard() {
     return (
@@ -21,6 +21,12 @@ export default function Dashboard() {
                     </div>
                 </div>
             </div>
+            <Link
+                href={route('products.index')}
+                className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+            >
+                Ver Productos
+            </Link>
         </AuthenticatedLayout>
     );
 }
